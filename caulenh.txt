@@ -1,0 +1,515 @@
+      BT1
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github
+$ git clone https://github.com/DaoTienThinh/24174600154_Dao_Tien-Thinh_bai_tap.git
+Cloning into '24174600154_Dao_Tien-Thinh_bai_tap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github
+$ cd 24174600154_Dao_Tien_Thinh_bai_tap
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ touch caulenh.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ ls
+README.md  caulenh.txt
+
+BT2
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git config user.name "Dao Tien Thinh"
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git config user.email "dtthinh.24174600154@sv.uneti.edu.vn"
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+   ec4163e..d5b54d0  main -> main
+
+BT3 
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+   ec4163e..d5b54d0  main -> main
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout -b branch_1
+fatal: a branch named 'branch_1' already exists
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout -b branch 1
+fatal: '1' is not a commit and a branch 'branch' cannot be created from it
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout -b branch-1
+Switched to a new branch 'branch-1'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ touch text_branch_1.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit">text_branch_1.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout -b branch-2
+Switched to a new branch 'branch-2'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-2)
+$ touch text_branch_2.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales.">text_branch_2.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-2)
+$ git add text_branch_2.txt
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-2)
+$ git commit -m "Tao nhanh 2"
+[branch-2 d149789] Tao nhanh 2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout -b branch-3
+Switched to a new branch 'branch-3'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat."
+Integer sit amet nisi aliquam, tempor libero quis, cursus erat.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ touch text_branch_3
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat. " > text
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_
+$ touch text_branch_2.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales.">text_branch_2.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ git commit -m"Tao nhanh 3"
+On branch branch-3
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text_branch_1.txt
+        text_branch_2.txt
+        text_branch_3
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout -b branch-4
+Switched to a new branch 'branch-4'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-4)
+$ touch text_branch_4.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante. "> text_branch_4.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-4)
+$ git commit -m "Tao nhanh 4"
+On branch branch-4
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text_branch_1.txt
+        text_branch_2.txt
+        text_branch_3
+        text_branch_4.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-4)
+$ git push origin branch-1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch-1' on GitHub by visiting:
+remote:      https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap/pull/new/branch-1
+remote:
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+ * [new branch]      branch-1 -> branch-1
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-4)
+$ git push origin branch-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 379 bytes | 379.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch-2' on GitHub by visiting:
+remote:      https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap/pull/new/branch-2
+remote:
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+ * [new branch]      branch-2 -> branch-2
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-4)
+$ git push origin branch-3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch-3' on GitHub by visiting:
+remote:      https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap/pull/new/branch-3
+remote:
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+ * [new branch]      branch-3 -> branch-3
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-4)
+$ git push origin branch-4
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch-4' on GitHub by visiting:
+remote:      https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap/pull/new/branch-4
+remote:
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+ * [new branch]      branch-4 -> branch-4
+
+BT4
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch -D branch -4
+error: unknown switch `4'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch-1
+  origin/branch-2
+  origin/branch-3
+  origin/branch-4
+  origin/main
+
+BT5
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git pull origin main
+From https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+BT7
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ mkdir main_folder
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ cd main_folder
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap/main_folder (main)
+$ touch main_txt_1.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap/main_folder (main)
+$ touch main_txt_2.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap/main_folder (main)
+$ touch main_txt_3.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap/main_folder (main)
+$ cd ..
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git add main_folder
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git commit -m "Them vao main_folder"
+[main 164e560] Them vao main_folder
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 392 bytes | 392.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+   d5b54d0..164e560  main -> main
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout branch-1
+Switched to branch 'branch-1'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ git merge main
+Updating d5b54d0..164e560
+Fast-forward
+ main_folder/main_txt_1.txt | 0
+ main_folder/main_txt_2.txt | 0
+ main_folder/main_txt_3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ git push origin branch-1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+   d5b54d0..164e560  branch-1 -> branch-1
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ git checkout branch-2
+error: The following untracked working tree files would be overwritten by checkout:
+        text_branch_2.txt
+Please move or remove them before you switch branches.
+Aborting
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout branch-2
+error: The following untracked working tree files would be overwritten by checkout:
+        text_branch_2.txt
+Please move or remove them before you switch branches.
+Aborting
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch list
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout branch-2
+error: The following untracked working tree files would be overwritten by checkout:
+        text_branch_2.txt
+Please move or remove them before you switch branches.
+Aborting
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout branc-3
+error: pathspec 'branc-3' did not match any file(s) known to git
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout branch-3
+Switched to branch 'branch-3'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ git merge main
+Updating d5b54d0..164e560
+Fast-forward
+ main_folder/main_txt_1.txt | 0
+ main_folder/main_txt_2.txt | 0
+ main_folder/main_txt_3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ git push origin branch-3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+   d5b54d0..164e560  branch-3 -> branch-3
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git push origin main
+Everything up-to-date
+
+BT8
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git checkout branch-1
+Switched to branch 'branch-1'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-1)
+$ git checkout -b branch-5
+Switched to a new branch 'branch-5'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-5)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non metus
+eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan sapien, ac
+finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada v el dui nec feugiat.
+Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam ut hendrerit est. Nulla
+sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis ante, euismod quis
+pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula auctor viverra. Phasellus
+dignissim mollis leo, vitae tristique enim"> text_branch_1.txt
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-5)
+$ git push origin branch-5
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch-5' on GitHub by visiting:
+remote:      https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap/pull/new/branch-5
+remote:
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+ * [new branch]      branch-5 -> branch-5
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (branch-5)
+$ git checkout main
+Switched to branch 'main'
+A       text_branch_1.txt
+Your branch is up to date with 'origin/main'.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch -D branch-5
+Deleted branch branch-5 (was 164e560).
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch --list
+  branch-1
+  branch-2
+  branch-3
+  branch_1
+  list
+* main
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch-1
+  origin/branch-2
+  origin/branch-3
+  origin/branch-4
+  origin/branch-5
+  origin/main
+
+BT10
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch --delete branch_1
+error: the branch 'branch_1' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_1'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch --delete branch-3
+Deleted branch branch-3 (was 164e560).
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch --delete branch-4
+error: branch 'branch-4' not found
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch --delete branch_1
+error: the branch 'branch_1' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_1'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git push origin --delete branch-2
+To https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git
+ - [deleted]         branch-2
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git branch --delete branch-3
+error: branch 'branch-3' not found
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git push origin delete branch_1
+error: src refspec delete does not match any
+error: failed to push some refs to 'https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap.git'
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git merge main
+Already up to date.
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git push origin branch-1
+Everything up-to-date
+
+admin@DESKTOP-6TF4KMJ MINGW64 ~/Downloads/github/24174600154_Dao_Tien_Thinh_bai_tap (main)
+$ git pull origin branch-1
+From https://github.com/DaoTienThinh/24174600154_Dao_Tien_Thinh_bai_tap
+ * branch            branch-1   -> FETCH_HEAD
+Already up to date.
+
